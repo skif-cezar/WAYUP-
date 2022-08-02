@@ -1,0 +1,358 @@
+/*Normalize*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #201b2d;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+/*--------------------*/
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(78, 189, 254, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(55, 144, 217, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(78, 189, 254, 1)),
+    color-stop(100%, rgba(55, 144, 217, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(55, 144, 217, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(55, 144, 217, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(55, 144, 217, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(78, 189, 254, 1) 0%,
+    rgba(55, 144, 217, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+  padding-top: 100px;
+  padding-bottom: 140px;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer {
+  max-width: 565px;
+}
+
+.title {
+  font-size: 2.57rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+}
+
+.title span {
+  font-size: 4.2rem;
+}
+
+.intro {
+  margin-bottom: 37px;
+  margin-top: 16px;
+  width: 436px;
+  font-size: 1.3rem;
+  letter-spacing: -0.055rem;
+  line-height: 1.5;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: #ffd429;
+  color: #2e2a1b;
+  display: block;
+  width: 222px;
+  padding: 21px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #de952a;
+}
+
+.travel {
+  margin-top: 13px;
+}
+
+.future {
+  padding-top: 103px;
+  padding-bottom: 120px;
+}
+
+.future__title {
+  text-align: center;
+  font-size: 2.15rem;
+  letter-spacing: 0.04rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+  margin-left: -8px;
+}
+
+.skill {
+  height: 162px;
+  width: 308px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill__title {
+  font-size: 1.28rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin-top: 14px;
+}
+
+.skill__title:nth-child(2) {
+  margin-top: -5px;
+}
+
+.skill__text {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.booking {
+  background: #ecf3f8;
+  padding-top: 103px;
+  padding-bottom: 103px;
+}
+
+.booking__title {
+  font-size: 2.12rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.booking__form {
+  margin: 0 auto;
+  width: 342px;
+  display: flex;
+  margin-top: 57px;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.booking__form input {
+  width: 100%;
+  border: 1px solid #bbbbbb;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  height: 48px;
+  margin-bottom: 15px;
+  padding: 18px 0px 24px 22px;
+}
+
+.booking__form input::placeholder,
+input::-moz-placeholder,
+input::-webkit-input-placeholder,
+input::-ms-input-placeholder {
+  color: #a6a5a9;
+}
+
+.form__btn {
+  width: 100%;
+  height: 54px;
+  padding: 0;
+}
+
+.footer {
+  padding: 60px 0;
+  background: #164d7a;
+}
+
+.credits {
+  text-align: center;
+  color: #d4cee3;
+  font-size: 1.2rem;
+  letter-spacing: -0.005rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .offer {
+    width: 100%;
+  }
+  .title {
+    text-align: center;
+  }
+  .intro {
+    text-align: center;
+    max-width: 100%;
+    margin: 16px auto 37px;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .skills {
+    margin-left: 0px;
+    justify-content: space-between;
+    margin-top: 83px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+  }
+  .skill {
+    margin-bottom: 60px;
+  }
+  .travel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .booking__form {
+    width: 100%;
+  }
+  .booking__form input {
+    font-size: 1.1rem;
+  }
+}
